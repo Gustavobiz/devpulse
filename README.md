@@ -1,26 +1,36 @@
-# API Quarkus
+# DevPulse
+
+O **DevPulse** é um ecossistema de microsserviços voltado para o monitoramento, conciliação e busca de métricas/dados. Projeto desenvolvido para a disciplina **WEB2** na UFRN.
 
 ---
 
-## 🛠️ Tecnologias Principais
+## Arquitetura e Tecnologias
 
-- **Java 21** (ou a versão utilizada no projeto)
-- **Quarkus** (Framework Java nativo para nuvem)
-- **Maven Wrapper (`./mvnw`)** (Gerenciamento de dependências)
+O projeto é estruturado em formato de **monorepo**:
+
+- **`services/api-quarkus`**: Serviço principal em **Java 21** utilizando **Quarkus Framework** para alta performance e APIs REST.
+- **`services/busca`**: Microsserviço de busca otimizada desenvolvido em **Go**.
+- **`services/conciliacao`**: Microsserviço de processamento e conciliação de dados desenvolvido em **Go**.
 
 ---
 
-## 🚀 Como Rodar Localmente
+## Pré-requisitos
 
-### Pré-requisitos
+Para rodar e construir a aplicação localmente, você precisará de:
 
-- JDK 17+ instalado
-- Docker
+- **Java JDK 21**
+- **Go 1.22+**
+- **Docker & Docker Compose**
+- **Mise**
 
-### 1. Executar em modo de desenvolvimento (Live Coding)
+---
 
-O modo dev do Quarkus recompila automaticamente o código a cada alteração feita:
+## Como Executar
+
+### 1. Usando o Docker Compose (Ambiente completo)
+
+Para subir todos os microsserviços em contêineres:
 
 ```bash
-./mvnw quarkus:dev
+docker-compose up --build
 ```

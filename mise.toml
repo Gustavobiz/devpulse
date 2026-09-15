@@ -1,15 +1,39 @@
+[tasks.build-quarkus]
+description = "Compila o serviço Quarkus"
+run = "./mvnw compile"
+dir = "services/api-quarkus"
+
+[tasks.build-busca]
+description = "Compila o serviço Busca"
+run = "go build ./..."
+dir = "services/busca"
+
+[tasks.build-conciliacao]
+description = "Compila o serviço Conciliação"
+run = "go build ./..."
+dir = "services/conciliacao"
+
 [tasks.build]
 description = "Compila todos os serviços"
-run = """
-cd services/api-quarkus && ./mvnw compile
-cd ../services/busca && go build ./...
-cd ../conciliacao && go build ./...
-"""
+depends = ["build-quarkus", "build-busca", "build-conciliacao"]
+
+# --- TESTES ---
+
+[tasks.test-quarkus]
+description = "Testa o serviço Quarkus"
+run = "./mvnw test"
+dir = "services/api-quarkus"
+
+[tasks.test-busca]
+description = "Testa o serviço Busca"
+run = "go test ./..."
+dir = "services/busca"
+
+[tasks.test-conciliacao]
+description = "Testa o serviço Conciliação"
+run = "go test ./..."
+dir = "services/conciliacao"
 
 [tasks.test]
 description = "Testa todos os serviços"
-run = """
-cd services/api-quarkus && ./mvnw test
-cd ../services/busca && go test ./...
-cd ../conciliacao && go test ./...
-"""
+depends = ["test-quarkus", "test-busca", "test-conciliacao"]

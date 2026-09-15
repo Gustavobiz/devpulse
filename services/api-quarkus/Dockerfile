@@ -1,8 +1,7 @@
-# Stage 1: Build da aplicação Quarkus
+# Stage 1: Build
 FROM maven:3.9-eclipse-temurin-21 AS build
 WORKDIR /code
 
-# Copia o código e pom.xml para compilar
 COPY pom.xml .
 COPY .mvn .mvn
 COPY mvnw .
@@ -10,7 +9,7 @@ COPY src src
 
 RUN ./mvnw package -DskipTests
 
-# Stage 2: Imagem final de execução
+# Stage 2: Runtime
 FROM registry.access.redhat.com/ubi9/openjdk-21-runtime:1.18
 
 ENV LANGUAGE='en_US:en'
