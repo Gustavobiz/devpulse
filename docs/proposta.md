@@ -6,12 +6,12 @@ Que precisam navegar por centenas de repositórios para achar tarefas de nível 
 O DevPulse é uma API de agregação de oportunidades open source
 Que coleta, filtra e organiza issues por linguagem e nível de dificuldade,
 Diferente da busca manual e dispersa na web,
-Nosso produto consolida vagas em um só lugar e responde buscas em milissegundos.
+Nosso produto consolida vagas em um só lugar e responde buscas.
 
 ## 2. Definição do MVP
-* **Dentro do MVP:** CRUD de tecnologias e repositórios favoritos; coletor concorrente em Go; busca paginada com cache; autenticação via JWT[cite: 1, 3, 4].
-* **Fora do MVP:** Notificações automáticas via Discord/e-mail; recomendação por IA; área gráfica web; integração de submissão direta de Pull Requests[cite: 4].
-* **Hipótese de Valor:** Acreditamos que estudantes de tecnologia utilizarão a API do DevPulse porque ela reduz o tempo de busca por tarefas acessíveis e responde em milissegundos[cite: 4].
+* **Dentro do MVP:** CRUD de tecnologias e repositórios favoritos; coletor concorrente em Go; busca paginada com cache; autenticação via JWT.
+* **Fora do MVP:** Notificações automáticas via Discord/e-mail; recomendação por IA; área gráfica web; integração de submissão direta de Pull Requests.
+* **Hipótese de Valor:** Acreditamos que estudantes de tecnologia utilizarão a API do DevPulse porque ela reduz o tempo de busca por tarefas acessíveis e responde em milissegundos.
 
 ## 3. Link para o Backlog
 [Backlog no GitHub Projects](https://github.com/GustavoSousaBernardes/devpulse/projects/1)
@@ -22,16 +22,16 @@ Nosso produto consolida vagas em um só lugar e responde buscas em milissegundos
 * **Usuario:** ID, nome, e-mail, tecnologias_interesse.
 
 ## 5. Decisão da Stack Principal: Java com Quarkus
-Optamos por Java com Quarkus pelo baixo consumo de memória (RSS idle), rápido tempo de inicialização, ecossistema maduro e suporte nativo a especificações como OpenAPI e CDI[cite: 1].
+Optei por Java com Quarkus pelo baixo consumo de memória (RSS idle), rápido tempo de inicialização, ecossistema maduro e suporte nativo a especificações como OpenAPI e CDI.
 
 ## 6. Divisão de Responsabilidades com Go
-* **Serviço Principal (Quarkus):** Regras de negócio, autenticação, persistência e rotas HTTP públicas[cite: 1, 3, 4].
-* **Serviço Go:** Varredura concorrente de I/O e consultas periódicas de repositórios em plano de fundo[cite: 1, 3, 4].
-* **Comunicação Interna:** gRPC utilizando contratos ProtoBuffers[cite: 1, 3].
+* **Serviço Principal (Quarkus):** Regras de negócio, autenticação, persistência e rotas HTTP públicas.
+* **Serviço Go:** Varredura concorrente de I/O e consultas periódicas de repositórios em plano de fundo.
+* **Comunicação Interna:** gRPC utilizando contratos ProtoBuffers.
 
 ## 7. Equipe
-* Gustavo Sousa Bernardes - Matrícula: 202X0000000 - Desenvolvedor Solo[cite: 4]
+* Gustavo Sousa Bernardes - Matrícula: 20260072831 - Desenvolvedor Solo
 
 ## 8. Coorte de Apresentação e Integração
-* **Coorte:** Turma 01 - Segunda / Quarta[cite: 1, 4].
-* **Integração:** Projeto individual sem integração externa[cite: 4].
+* **Coorte:** Turma 01 - Segunda / Quarta.
+* **Integração:** Projeto individual sem integração externa.

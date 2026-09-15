@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  api-principal:
+    build:
+      context: ./api-quarkus
+      dockerfile: src/main/docker/Dockerfile.jvm
+    ports:
+      - "8080:8080"
+  busca:
+    build:
+      context: ./services/busca
+    ports:
+      - "9090:9090"
