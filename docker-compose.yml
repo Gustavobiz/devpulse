@@ -1,8 +1,8 @@
-version: '3.8'
+version: "3.8"
 services:
   api-principal:
     build:
-      context: ./api-quarkus
+      context: ./services/api-quarkus
       dockerfile: src/main/docker/Dockerfile.jvm
     ports:
       - "8080:8080"

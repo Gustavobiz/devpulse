@@ -1,7 +1,7 @@
 [tasks.build]
 description = "Compila todos os serviços"
 run = """
-cd api-quarkus && ./mvnw compile
+cd services/api-quarkus && ./mvnw compile
 cd ../services/busca && go build ./...
 cd ../conciliacao && go build ./...
 """
@@ -9,7 +9,7 @@ cd ../conciliacao && go build ./...
 [tasks.test]
 description = "Testa todos os serviços"
 run = """
-cd api-quarkus && ./mvnw test
+cd services/api-quarkus && ./mvnw test
 cd ../services/busca && go test ./...
 cd ../conciliacao && go test ./...
 """

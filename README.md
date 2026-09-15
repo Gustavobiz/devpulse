@@ -1,62 +1,26 @@
-# api-quarkus
+# API Quarkus
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+---
 
-If you want to learn more about Quarkus, please visit its website: <https://quarkus.io/>.
+## 🛠️ Tecnologias Principais
 
-## Running the application in dev mode
+- **Java 21** (ou a versão utilizada no projeto)
+- **Quarkus** (Framework Java nativo para nuvem)
+- **Maven Wrapper (`./mvnw`)** (Gerenciamento de dependências)
 
-You can run your application in dev mode that enables live coding using:
+---
 
-```shell script
+## 🚀 Como Rodar Localmente
+
+### Pré-requisitos
+
+- JDK 17+ instalado
+- Docker (caso precise de banco de dados local via Containers)
+
+### 1. Executar em modo de desenvolvimento (Live Coding)
+
+O modo dev do Quarkus recompila automaticamente o código a cada alteração feita:
+
+```bash
 ./mvnw quarkus:dev
 ```
-
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at <http://localhost:8080/q/dev/>.
-
-## Packaging and running the application
-
-The application can be packaged using:
-
-```shell script
-./mvnw package
-```
-
-It produces the `quarkus-run.jar` file in the `target/quarkus-app/` directory.
-Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/quarkus-app/lib/` directory.
-
-The application is now runnable using `java -jar target/quarkus-app/quarkus-run.jar`.
-
-If you want to build an _über-jar_, execute the following command:
-
-```shell script
-./mvnw package -Dquarkus.package.jar.type=uber-jar
-```
-
-The application, packaged as an _über-jar_, is now runnable using `java -jar target/*-runner.jar`.
-
-## Creating a native executable
-
-You can create a native executable using:
-
-```shell script
-./mvnw package -Dnative
-```
-
-Or, if you don't have GraalVM installed, you can run the native executable build in a container using:
-
-```shell script
-./mvnw package -Dnative -Dquarkus.native.container-build=true
-```
-
-You can then execute your native executable with: `./target/api-quarkus-1.0.0-SNAPSHOT-runner`
-
-If you want to learn more about building native executables, please consult <https://quarkus.io/guides/maven-tooling>.
-
-## Provided Code
-
-### REST
-
-Easily start your REST Web Services
-
-[Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
