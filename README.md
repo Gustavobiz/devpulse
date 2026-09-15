@@ -15,7 +15,7 @@
 ### Pré-requisitos
 
 - JDK 17+ instalado
-- Docker (caso precise de banco de dados local via Containers)
+- Docker
 
 ### 1. Executar em modo de desenvolvimento (Live Coding)
 
