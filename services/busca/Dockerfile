@@ -1,21 +1,15 @@
-FROM golang:1.22-alpine AS builder
-
+# Estágio 1: Build do binário estático
+FROM golang:1.18-alpine AS builder
 WORKDIR /app
-
 COPY go.mod ./
-# COPY go.sum ./ # Descomente se/quando tiver dependências externas
+# COPY go.sum ./ # Descomente se tiver go.sum
 RUN go mod download
-
 COPY . .
+RUN CGO_ENABLED=0 GOOS=linux go build -o busca main.go
 
-RUN CGO_ENABLED=0 GOOS=linux go build -o main .
-
-FROM alpine:latest
-
-WORKDIR /app
-
-COPY --from=builder /app/main .
-
-EXPOSE 8081
-
-CMD ["./main"]
+# Estágio 2: Imagem final leve
+FROM alpine:3.18
+WORKDIR /
+COPY --from=builder /app/busca /busca
+EXPOSE 8080
+CMD ["/busca"]
