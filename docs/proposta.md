@@ -13,7 +13,7 @@ o produto consolida vagas em um só lugar e responde buscas.
 
 - **Dentro do MVP:** CRUD de tecnologias e repositórios favoritos; coletor concorrente em Go; busca paginada com cache; autenticação via JWT.
 - **Fora do MVP:** Notificações automáticas via Discord/e-mail; recomendação por IA; área gráfica web; integração de submissão direta de Pull Requests.
-- **Hipótese de Valor:** Acreditamos que estudantes de tecnologia utilizarão a API do DevPulse porque ela reduz o tempo de busca por tarefas acessíveis e responde em milissegundos.
+- **Hipótese de Valor:** Acredito que estudantes de tecnologia utilizarão a API do DevPulse porque ela reduz o tempo de busca por tarefas acessíveis e responde em milissegundos.
 
 ## 3. Link para o Backlog
 
@@ -43,3 +43,10 @@ Optei por Java com Quarkus pelo baixo consumo de memória (RSS idle), rápido te
 
 - **Coorte:** Turma 01 - Segunda / Quarta.
 - **Integração:** Projeto individual sem integração externa.
+
+## 9. Links
+
+- **Video:** https://drive.google.com/file/d/1JlOjAHW98huRqgdm9njOjzlpCKt1OBLK/view?usp=drive_link
+- **GitHub:** https://github.com/Gustavobiz/devpulse
+
+##
