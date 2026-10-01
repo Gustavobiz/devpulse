@@ -54,8 +54,18 @@ Optei por Java com Quarkus pelo baixo consumo de memória (RSS idle), rápido te
 d
 d
 d
-d
-d
-d
+44
+4
+4
 
-dd
+4
+44
+4
+4
+4
+4
+
+4
+4
+4
+4
