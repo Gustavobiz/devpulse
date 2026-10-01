@@ -50,11 +50,3 @@ Optei por Java com Quarkus pelo baixo consumo de memória (RSS idle), rápido te
 - **GitHub:** https://github.com/Gustavobiz/devpulse
 
 ##
-
-d
-d
-d
-44
-22
-2
-2
