@@ -17,7 +17,3 @@ CMD ["/busca"]
 sdas
 hg
 nmmm
-nnnn
-kkk
-kkkkk
-jj
