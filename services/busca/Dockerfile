@@ -14,6 +14,3 @@ COPY --from=builder /app/busca /busca
 EXPOSE 8080
 CMD ["/busca"]
 
-sdas
-hg
-nmmm
