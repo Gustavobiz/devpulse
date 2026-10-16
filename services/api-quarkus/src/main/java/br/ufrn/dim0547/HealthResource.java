@@ -14,27 +14,12 @@ public class HealthResource {
         return "Hello from Quarkus REST";
     }
 
-    @teste 
-    sjakd
-    zxcjkl
-    zxcjklxcz
-    zxcjkl
-zxcz
-zcxczx
-xzc
-cxz
-xcz
-cxz
-
-cxz
-xzc
-zc
-zxcjkl
-fgh
-fgh
 hf
 fh
-
+dsd
+sd
+sd
+ds
 
 
 }
