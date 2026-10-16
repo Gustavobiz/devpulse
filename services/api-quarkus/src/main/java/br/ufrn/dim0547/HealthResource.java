@@ -14,12 +14,7 @@ public class HealthResource {
         return "Hello from Quarkus REST";
     }
 
-hf
-fh
-dsd
-sd
-sd
-ds
+
 
 
 }
