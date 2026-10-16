@@ -13,30 +13,7 @@ public class HealthResource {
     public String hello() {
         return "Hello from Quarkus REST";
     }
-d
-d
-d
-dim0547
-dim0547
-d
-x
 
-x
-x
 
-x
-x
-x
-x
-x
-x
-y
-
-y
-y
-y
-y
-y
-yy
 
 }
