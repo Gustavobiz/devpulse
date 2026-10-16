@@ -1,3 +1,19 @@
+# --- AMBIENTE E DOCKER ---
+
+[tasks.up]
+description = "Subir o banco PostgreSQL e serviços"
+run = "docker compose up -d"
+
+[tasks.down]
+description = "Desligar os contêineres"
+run = "docker compose down"
+
+[tasks.clean]
+description = "Limpar os volumes do banco"
+run = "docker compose down -v"
+
+# --- BUILDS ---
+
 [tasks.build-quarkus]
 description = "Compila o serviço Quarkus"
 run = "./mvnw compile"
