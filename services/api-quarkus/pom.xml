@@ -50,6 +50,12 @@
             <artifactId>quarkus-jdbc-postgresql</artifactId>
         </dependency>
 
+<!-- Hibernate ORM + Panache -->
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-hibernate-orm-panache</artifactId>
+        </dependency>
+
         <!-- Migração de Banco com Flyway -->
         <dependency>
             <groupId>io.quarkus</groupId>
