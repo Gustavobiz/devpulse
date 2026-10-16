@@ -29,6 +29,11 @@ cxz
 cxz
 xzc
 zc
+zxcjkl
+fgh
+fgh
+hf
+fh
 
 
 
