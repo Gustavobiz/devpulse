@@ -30,19 +30,13 @@ x
 x
 x
 x
-x
-x
-c
+y
 
-v
+y
+y
+y
+y
+y
+yy
 
-v
-br
-br
-brb
-
-brbb
-brbbb
-
-b
 }
