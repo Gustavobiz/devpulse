@@ -40,6 +40,18 @@
             <artifactId>quarkus-rest</artifactId>
         </dependency>
 
+        <!-- OpenAPI / Swagger Documentation -->
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-smallrye-openapi</artifactId>
+        </dependency>
+
+<!-- Validação de DTOs (Bean Validation) -->
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-hibernate-validator</artifactId>
+        </dependency>
+
         <!-- Persistência e Banco de Dados -->
         <dependency>
             <groupId>io.quarkus</groupId>
