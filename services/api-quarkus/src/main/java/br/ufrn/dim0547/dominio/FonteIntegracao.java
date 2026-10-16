@@ -1,5 +1,8 @@
 package br.ufrn.dim0547.dominio;
 
-public class FonteIntegracao {
-    
-}
+public record FonteIntegracao(
+    Long id,
+    String nome,
+    String slug,
+    String tipo
+) {}
