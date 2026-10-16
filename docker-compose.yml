@@ -1,6 +1,27 @@
 version: "3.8"
 
 services:
+  banco:
+    image: postgres:17-alpine
+    container_name: devpulse-postgres
+    environment:
+      POSTGRES_DB: ${DB_NAME:-devpulse}
+      POSTGRES_USER: ${DB_USER:-devpulse}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-devpulse}
+    ports:
+      - "5432:5432"
+    volumes:
+      - dados_postgres:/var/lib/postgresql/data
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "pg_isready -U ${DB_USER:-devpulse} -d ${DB_NAME:-devpulse}",
+        ]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
   api-quarkus:
     build:
       context: ./services/api-quarkus
@@ -8,6 +29,12 @@ services:
       - "8080:8080"
     environment:
       - QUARKUS_HTTP_PORT=8080
+      - DB_URL=jdbc:postgresql://banco:5432/devpulse
+      - DB_USER=devpulse
+      - DB_PASSWORD=devpulse
+    depends_on:
+      banco:
+        condition: service_healthy
 
   busca:
     build:
@@ -20,3 +47,6 @@ services:
       context: ./services/conciliacao
     ports:
       - "8082:8082"
+
+volumes:
+  dados_postgres:
