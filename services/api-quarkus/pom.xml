@@ -74,6 +74,12 @@
             <artifactId>quarkus-flyway</artifactId>
         </dependency>
 
+<!-- Suporte a JSON no Quarkus REST (Jackson) -->
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-rest-jackson</artifactId>
+        </dependency>
+        
         <!-- Testes -->
         <dependency>
             <groupId>io.quarkus</groupId>
