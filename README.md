@@ -106,20 +106,6 @@ A API possui documentação interativa gerada automaticamente via SmallRye OpenA
 
 ---
 
-## Funcionalidades Principais (Sprint 1)
-
-### CRUD de Fontes de Integração (`/fontes`)
-
-- Listagem com paginação (`pagina`, `tamanho`) e filtro por nome (`nome`).
-- Busca por ID.
-- Criação com retorno `201 Created` e cabeçalho `Location`.
-- Atualização e remoção com retorno `204 No Content` para operações sem conteúdo.
-
-### CRUD de Issues Aninhadas (`/fontes/{fonteId}/issues`)
-
-- Listagem de tarefas vinculadas a uma fonte com filtro por estado (`estado`).
-- Validação de existência da fonte pai antes de realizar qualquer operação.
-
 ### Tratamento de Erros Padronizado (RFC 9457 — Problem Details)
 
 - `404 Not Found` para recursos inexistentes.
