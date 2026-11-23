@@ -14,6 +14,9 @@ public class HealthResource {
         return "Hello from Quarkus REST";
     }
 
+deDominio
+deDominio
 
+deDominio
 
 }
