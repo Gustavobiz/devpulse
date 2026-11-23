@@ -54,7 +54,7 @@ public class RepositorioPanacheFontes implements RepositorioDeFontes, PanacheRep
         return entidade.paraDominio();
     }
 
-    @Override
+    @Override 
     @Transactional
     public boolean remover(Long id) {
         return deleteById(id);
