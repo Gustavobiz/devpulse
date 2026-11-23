@@ -5,4 +5,4 @@ public record FonteIntegracao(
     String nome,
     String slug,
     String tipo
-) {}
+) {} 
