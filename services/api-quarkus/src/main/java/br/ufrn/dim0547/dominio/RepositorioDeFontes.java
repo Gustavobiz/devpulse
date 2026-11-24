@@ -12,10 +12,3 @@ public interface RepositorioDeFontes {
 }dsa
 das
 ads
-ads
-sd
-ad
-
-asd
-ad
-das
